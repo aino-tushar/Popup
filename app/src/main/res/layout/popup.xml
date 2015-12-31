@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:orientation="vertical"
+        android:background="#8B4598"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="trupublic"
+            android:textColor="#ffffff"
+            android:id="@+id/searchTrupublicText"
+            android:width="150dp"
+            android:layout_above="@+id/Months"
+            android:layout_marginBottom="26dp"
+            android:textSize="60sp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignRight="@+id/Months"
+            android:layout_alignEnd="@+id/Months"
+            android:layout_alignLeft="@+id/Months"
+            android:layout_alignStart="@+id/Months" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|right|end"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/exitForSearch" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/Months"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:width="250dip"
+                    android:background="#ffffff"
+                    android:layout_column="0"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/exitForSearch"
+                    android:layout_toStartOf="@+id/exitForSearch" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/searchButton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
