@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button popupButton, insidePopupButton;
     TextView popupText;
 
+    //this is oncreate method
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         init();
         popupInit();
     }
+
 
     public void init() {
         popupButton = (Button) findViewById(R.id.searchButton);
@@ -45,8 +48,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         insidePopupButton.setOnClickListener(this);
         LayoutInflater layoutInflater = (LayoutInflater) getBaseContext().getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = layoutInflater.inflate(R.layout.popup, null);
-
-
 
 
         popupMessage = new PopupWindow(popupView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
